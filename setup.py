@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="simpledorff", # Replace with your own username
-    version="0.0.1",
+    version="0.0.2",
     author="Tal Perry",
     author_email="tal@lighttag.io",
     description="Calculate Krippendorff's Alpha on any DataFrame",
@@ -18,5 +18,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',
+    # python_requires='>=3.6',
+    # setup_requires=["setuptools~=46.0.0"]
 )

@@ -1,8 +1,7 @@
 from unittest import TestCase
 import pandas as pd
 import simpledorff
-import data_transforms
-import metrics
+from simpledorff import data_transforms, metrics
 from collections import Counter
 
 

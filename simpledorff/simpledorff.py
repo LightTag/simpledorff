@@ -1,5 +1,5 @@
-import data_transforms
-from metrics import nominal_metric
+from simpledorff import data_transforms
+from simpledorff.metrics import nominal_metric
 
 
 def calculate_de(frequency_dicts, metric_fn):
