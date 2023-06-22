@@ -74,7 +74,10 @@ def calculate_krippendorffs_alpha(ea_table_df, metric_fn=nominal_metric):
         frequency_dicts=frequency_dict, metric_fn=metric_fn
     )
     N = frequency_dict['total']
-    alpha = 1 - (observed_disagreement / expected_disagreement)*(N-1)
+    if expected_disagreement != 0:
+        alpha = 1 - (observed_disagreement / expected_disagreement)*(N-1)
+    else:
+        alpha = 1 * (N-1)
     return alpha
 
 
